@@ -1,33 +1,47 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[1]:
+
+
+get_ipython().run_line_magic('run', './helpers.ipynb')
+
+
+# In[2]:
+
+
+ips(T['iron_plate'], S['steel_furnace'])
+
+
+# In[3]:
+
+
+ips(T['iron_plate'], S['stone_furnace'])
+
+
+# In[4]:
+
+
+ips(T['iron_plate'], S['steel_furnace'])
+
+
 # In[5]:
 
 
-def ips(c_time, c_speed):
-    """ Computes items per second from a recipe and 
-        assembler.
-    
-    c_time (float): Crafting time of recipe
-    c_speed (float): Crafting speed of the assembler
-    """
-    return c_speed / c_time
+B['yellow'] / ips(T['iron_plate'], S['steel_furnace'])
 
 
 # In[6]:
 
 
-ips(c_time=3.2, c_speed=2)
+B['yellow'] / ips(T['iron_plate'], S['steel_furnace'])
 
 
 # In[7]:
 
 
-ips(.5, .75)
-
-
-# In[ ]:
-
-
-
+itf(
+    ips(T['iron_plate'], S['steel_furnace']),
+    B['yellow']
+)
 
