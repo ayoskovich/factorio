@@ -69,3 +69,12 @@ SR['blue']
 
 .75*1.40
 
+
+# In[ ]:
+
+
+def foo():
+    """ Here's a function that didn't exist before.
+    """
+    pass
+
