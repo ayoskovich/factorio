@@ -1,63 +1,54 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 get_ipython().run_line_magic('run', './helpers.ipynb')
 
 
-# In[2]:
+# In[ ]:
 
 
 ips(CT['iron_gear'], CS['ass_2'])
 
 
-# In[3]:
+# In[ ]:
 
 
 ips(CT['pipe'], CS['steel_furnace'])
 
 
-# In[18]:
+# In[ ]:
 
 
 ips(CT['iron_plate'], CS['steel_furnace'])*36
 
 
-# In[27]:
-
-
-itf(
-    CT['iron_plate'], 
-    CS['steel_furnace'],
-    15
-)
-
-
-# In[26]:
+# In[ ]:
 
 
 ips(CT['iron_plate'], CS['steel_furnace'])
 
 
-# In[4]:
+# In[ ]:
 
 
+# Items needed to fill the belt
 itf(
     CT['iron_plate'], 
     CS['steel_furnace'],
-    BS['yellow']
+    BS['yellow']['throughput']
 )
 
 
-# In[8]:
+# In[ ]:
 
 
 SR['blue']
 
 
-# In[9]:
+# In[ ]:
 
 
 # Science math (ish)
@@ -67,16 +58,14 @@ SR['blue']
 # 32 steel plates per second
 
 
-# In[23]:
+# In[ ]:
 
 
 .75*(1.20)*(1.20)
 
 
-# In[24]:
+# In[ ]:
 
 
 .75*1.40
 
-
-# An assembler with 2 * 20% speed modules applies a 40% increase ONCE, not a 20% increase twice.

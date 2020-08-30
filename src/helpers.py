@@ -19,9 +19,11 @@ def itf(c_time, c_speed, belt_speed):
         saturate the belt at belt_speed.
     
     ips (float): Items per second being created
+    c_speed (float): Crafting speed of thing
     belt_speed (float): Throughput of belt
     """
     return belt_speed / ips(c_time, c_speed)
+
 
 
 # Crafting times
@@ -45,7 +47,7 @@ CS = {
 }
 
 
-# Belt speeds
+# Belt information
 BS = {
     'yellow':  {
         'throughput':15, # Items per game second for 2 lanes
